@@ -271,20 +271,17 @@ please preview your site before committing, and make sure to run
 
 <hr/>
 
+<!--
 {% comment %}
 SETUP
-
 Delete irrelevant sections from the setup instructions.  Each
 section is inside a 'div' without any classes to make the beginning
 and end easier to find.
-
 This is the other place where people frequently make mistakes, so
 please preview your site before committing, and make sure to run
 'tools/check' as well.
 {% endcomment %}
-
 <h2 id="setup">Setup</h2>
-
 <p>
   To participate in a
   {% if page.carpentry == "swc" %}
@@ -303,21 +300,19 @@ please preview your site before committing, and make sure to run
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
-
+<!--
 <div id="shell"> {% comment %} Start of 'shell' section. {% endcomment %}
   <h3>The Bash Shell</h3>
   <p>
     Bash is a commonly-used shell that gives you the power to do simple
     tasks more quickly.
   </p>
-
   <div>
     <ul class="nav nav-tabs nav-justified" role="tablist">
       <li role="presentation" class="active"><a data-os="windows" href="#shell-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
       <li role="presentation"><a data-os="macos" href="#shell-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
       <li role="presentation"><a data-os="linux" href="#shell-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
     </ul>
-
     <div class="tab-content">
       <article role="tabpanel" class="tab-pane active" id="shell-windows">
         <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
@@ -399,7 +394,6 @@ please preview your site before committing, and make sure to run
     </div>
   </div>
 </div> {% comment %} End of 'shell' section. {% endcomment %}
-
 <div id="git"> {% comment %} Start of 'Git' section. GitHub browser compatability
   is given at https://help.github.com/articles/supported-browsers/{% endcomment %}
   <h3>Git</h3>
@@ -420,7 +414,6 @@ please preview your site before committing, and make sure to run
     <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
       for keeping your email address private</a> provided at GitHub.
   </p>
-
   <div>
     <ul class="nav nav-tabs nav-justified" role="tablist">
       <li role="presentation" class="active"><a data-os="windows" href="#git-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
@@ -459,13 +452,13 @@ please preview your site before committing, and make sure to run
           <code>sudo dnf install git</code>.
         </p>
       </article>
-    </div>
-  </div>
+    </div> 
+    -->
+<!--
+</div>
 </div> {% comment %} End of 'Git' section. {% endcomment %}
-
 <div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
   <h3>Text Editor</h3>
-
   <p>
     When you're writing code, it's nice to have a text editor that is
     optimized for writing code, with features like automatic
@@ -476,14 +469,12 @@ please preview your site before committing, and make sure to run
     (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to 
     return to the shell.
   </p>
-
   <div>
     <ul class="nav nav-tabs nav-justified" role="tablist">
       <li role="presentation" class="active"><a data-os="windows" href="#editor-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
       <li role="presentation"><a data-os="macos" href="#editor-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
       <li role="presentation"><a data-os="linux" href="#editor-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
     </ul>
-
     <div class="tab-content">
       <article role="tabpanel" class="tab-pane active" id="editor-windows">
         <p>
@@ -527,13 +518,11 @@ please preview your site before committing, and make sure to run
     </div>
   </div>
 </div> {% comment %} End of 'editor' section. {% endcomment %}
-
 <div id="python"> {% comment %} Start of 'Python' section. Remove the third paragraph if
   the workshop will teach Python using something other than
   the Jupyter notebook.
   Details at https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility {% endcomment %}
   <h3>Python</h3>
-
   <p>
     <a href="https://python.org">Python</a> is a popular language for
     research computing, and great for general-purpose programming as
@@ -542,13 +531,11 @@ please preview your site before committing, and make sure to run
     <a href="https://www.anaconda.com/distribution/">Anaconda</a>,
     an all-in-one installer.
   </p>
-
   <p>
     Regardless of how you choose to install it,
     <strong>please make sure you install Python version 3.x</strong>
     (e.g., 3.6 is fine).
   </p>
-
   <p>
     We will teach Python using the <a href="https://jupyter.org/">Jupyter notebook</a>,
     a programming environment that runs in a web browser. For this to work you will need a reasonably
@@ -558,7 +545,6 @@ please preview your site before committing, and make sure to run
     (some older browsers, including Internet Explorer version 9
     and below, are not).
   </p>
-
   <div>
     <ul class="nav nav-tabs nav-justified" role="tablist">
       <li role="presentation" class="active"><a data-os="windows" href="#python-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
@@ -616,227 +602,4 @@ please preview your site before committing, and make sure to run
         </ol>
       </article>
     </div>
-  </div>
-  {% comment %}
-  <p>
-    Once you are done installing the software listed above,
-    please go to <a href="setup/index.html">this page</a>,
-    which has instructions on how to test that everything was installed correctly.
-  </p>
-  {% endcomment %}
-</div> {% comment %} End of 'Python' section. {% endcomment %}
-
-<div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
-  <h3>R</h3>
-
-  <p>
-    <a href="https://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
-    <a href="https://www.rstudio.com/">RStudio</a>.
-  </p>
-
-  <div>
-    <ul class="nav nav-tabs nav-justified" role="tablist">
-      <li role="presentation" class="active"><a data-os="windows" href="#rstats-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
-      <li role="presentation"><a data-os="macos" href="#rstats-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation"><a data-os="linux" href="#rstats-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
-    </ul>
-
-    <div class="tab-content">
-      <article role="tabpanel" class="tab-pane active" id="rstats-windows">
-        <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
-        <p>
-          Install R by downloading and running
-          <a href="https://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-          from <a href="https://cran.r-project.org/index.html">CRAN</a>.
-          Also, please install the
-          <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-          Note that if you have separate user and admin accounts, you should run the 
-          installers as administrator (right-click on .exe file and select "Run as 
-          administrator" instead of double-clicking). Otherwise problems may occur later, 
-          for example when installing R packages.
-        </p>
-      </article>
-      <article role="tabpanel" class="tab-pane active" id="rstats-macos">
-        <a href="https://www.youtube.com/watch?v=5-ly3kyxwEg">Video Tutorial</a>
-        <p>
-          Install R by downloading and running
-          <a href="https://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-          from <a href="https://cran.r-project.org/index.html">CRAN</a>.
-          Also, please install the
-          <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-        </p>
-      </article>
-      <article role="tabpanel" class="tab-pane active" id="rstats-linux">
-        <p>
-          You can download the binary files for your distribution
-          from <a href="https://cran.r-project.org/index.html">CRAN</a>. Or
-          you can use your package manager (e.g. for Debian/Ubuntu
-          run <code>sudo apt-get install r-base</code> and for Fedora run
-          <code>sudo dnf install R</code>).  Also, please install the
-          <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-        </p>
-      </article>
-    </div>
-  </div>
-</div> {% comment %} End of 'R' section. {% endcomment %}
-
-<div id="sql"> {% comment %} Start of 'SQLite' section. {% endcomment %}
-  <h3>SQLite</h3>
-
-  <p>
-    SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="https://www.sqlite.org/">SQLite</a> in our lessons.
-  </p>
-
-  <div>
-    <ul class="nav nav-tabs nav-justified" role="tablist">
-      <li role="presentation" class="active"><a data-os="windows" href="#sql-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
-      <li role="presentation"><a data-os="macos" href="#sql-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation"><a data-os="linux" href="#sql-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
-      {% if page.carpentry != 'dc' %}
-      <li role="presentation"><a data-os="Web" href="#sql-web" aria-controls="Linux" role="tab" data-toggle="tab">Web</a></li>
-      {% endif %}
-    </ul>
-    {% if page.carpentry == 'dc' %}
-    <div class="tab-content">
-      <article role="tabpanel" class="tab-pane active" id="sql-windows">
-        <p>
-          Visit <a href="https://sqlitebrowser.org/dl/">SqliteBrowser</a> and download and install it. Version 3.11.0 or greater.
-        </p>
-      </article>
-      <article role="tabpanel" class="tab-pane active" id="sql-macos">
-        <p>
-          Visit <a href="https://sqlitebrowser.org/dl/">SqliteBrowser</a> and download and install it. Version 3.11.0 or greater.
-        </p>
-      </article>
-      <article role="tabpanel" class="tab-pane active" id="sql-linux">
-        <p>
-          Visit <a href="https://sqlitebrowser.org/dl/">SqliteBrowser</a> and download and install it. Version 3.11.0 or greater.
-        </p>
-      </article>
-      
-    </div>
-    {%else%}
-    <div class="tab-content">
-      <article role="tabpanel" class="tab-pane active" id="sql-windows">
-        <p>
-          <ul>
-            <li>Run git-bash from the start menu</li>
-            <li>Copy the following <code>curl {{site.url}}{{site.baseurl}}/getsql.sh | bash</code></li>
-            <li>Paste it into the window that git bash opened. If you're unsure, ask an instructor for help</li>
-            <li>You should see something like <code>3.27.2 2019-02-25 16:06:06 ...</code></li>
-          </ul>
-            
-          <p>If you want to do this manually, download <a href="https://www.sqlite.org/2019/sqlite-tools-win32-x86-3270200.zip">sqlite3</a>, make a bin directory in the user's home directory, unzip sqlite3, move it into the bin directory, and then add the bin directory to the path.</p>
-
-        </p>
-      </article>
-      <article role="tabpanel" class="tab-pane active" id="sql-macos">
-        <p>
-          SQLite comes pre-installed on macOS.
-        </p>
-      </article>
-      <article role="tabpanel" class="tab-pane active" id="sql-linux">
-        <p>
-          SQLite comes pre-installed on Linux.
-        </p>
-      </article>
-      <article role="tabpanel" class="tab-pane active" id="sql-web">
-        <p>
-          <ul>
-            <li>In case of problems: register for an account at <a href="http://pythonanywhere.com/">Python Anywhere</a></li>
-            <li>Download <a href="http://swcarpentry.github.io/sql-novice-survey/files/survey.db">survey.db</a></li>
-            <li>Click on files and upload survey.db</li>
-            <li>Click on dashboard and Choose new console <code>$ bash</code></li>
-            </ul>
-        </p>
-      </article>
-    </div>
-      {%endif%}
-  </div>
-
-  <p><strong>If you installed Anaconda, it also has a copy of SQLite
-      <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
-      Instructors will provide a workaround for it if needed.</strong></p>
-</div> {% comment %} End of 'SQLite' section. {% endcomment %}
-
-<div id="openrefine"> {% comment %} Start of 'OpenRefine' section. {% endcomment %}
-  <h3>OpenRefine</h3>
-  <p>
-    For this lesson you will need <em>OpenRefine</em> and a
-    web browser. <em>Note:</em> this is a Java program that runs on your machine (not in the cloud).
-    It runs inside a web browser, but no web connection is needed.
-  </p>
-
-  <div>
-    <ul class="nav nav-tabs nav-justified" role="tablist">
-      <li role="presentation" class="active"><a data-os="windows" href="#openrefine-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
-      <li role="presentation"><a data-os="macos" href="#openrefine-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation"><a data-os="linux" href="#openrefine-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
-    </ul>
-
-    <div class="tab-content">
-      <article role="tabpanel" class="tab-pane active" id="openrefine-windows">
-        <p>
-          Check that you have either the Firefox or the Chrome browser installed and set as your default browser.
-          <strong>OpenRefine runs in your default browser.</strong>
-          It will not run correctly in Internet Explorer.
-        </p>
-        <p>Download software from <a href="http://openrefine.org/">http://openrefine.org/</a></p>
-        <p>Create a new directory called OpenRefine.</p>
-        <p>Unzip the downloaded file into the OpenRefine directory by right-clicking and selecting "Extract ...". </p>
-        <p>Go to your newly created OpenRefine directory.</p>
-        <p>Launch OpenRefine by clicking <code>openrefine.exe</code> (this will launch a command prompt window, but you can ignore that - just wait for OpenRefine to open in the browser).</p>
-        <p>If you are using a different browser, or if OpenRefine does not automatically open for you, point your browser at <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> or <a href="http://localhost:3333">http://localhost:3333</a> to use the program.</p>
-      </article>
-      <article role="tabpanel" class="tab-pane active" id="openrefine-macos">
-        <p>Check that you have either the Firefox or the Chrome browser installed and set as your default browser. <strong>OpenRefine runs in your default browser.</strong> It may not run correctly in Safari.</p>
-        <p>Download software from <a href="http://openrefine.org/">http://openrefine.org/</a>.</p>
-        <p>Create a new directory called OpenRefine.</p>
-        <p>Unzip the downloaded file into the OpenRefine directory by double-clicking it.</p>
-        <p>Go to your newly created OpenRefine directory.</p>
-        <p>Launch OpenRefine by dragging the icon into the Applications folder.</p>
-        <p>Use <code>Ctrl-click/Open ... </code> to launch it.</p>
-        <p>If you are using a different browser, or if OpenRefine does not automatically open for you, point your browser at <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> or <a href="http://localhost:3333">http://localhost:3333</a> to use the program.</p>
-      </article>
-      <article role="tabpanel" class="tab-pane active" id="openrefine-linux">
-        <p>Check that you have either the Firefox or the Chrome browser installed and set as your default browser. <strong>OpenRefine runs in your default browser.</strong></p>
-        <p>Download software from <a href="http://openrefine.org/">http://openrefine.org/</a>.</p>
-        <p>Make a directory called OpenRefine.</p>
-        <p>Unzip the downloaded file into the OpenRefine directory.</p>
-        <p>Go to your newly created OpenRefine directory.</p>
-        <p>Launch OpenRefine by entering <code>./refine</code> into the terminal within the OpenRefine directory.</p>
-        <p>If you are using a different browser, or if OpenRefine does not automatically open for you, point your browser at <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> or <a href="http://localhost:3333">http://localhost:3333</a> to use the program.</p>
-      </article>
-    </div>
-  </div>
-</div> {% comment %} End of 'OpenRefine' section. {% endcomment %}
-
-{% comment %}
-<div id="vm">
-  <h3>Virtual Machine</h3>
-
-  <p>
-    Some instructors prefer to have learners use a virtual machine (VM)
-    rather than install software on their own computers.  If your
-    instructors have chosen to do this, please:
-  </p>
-  <ol>
-    <li>
-      Install <a href="https://www.virtualbox.org/">VirtualBox</a>.
-    </li>
-    <li>
-      Download our <a href="{{site.swc_vm}}">VM image</a>.
-      <strong>Warning:</strong> this file is 1.7 GByte, so please
-      download it <em>before</em> coming to your workshop.
-    </li>
-    <li>
-      Load the VM into VirtualBox by selecting "Import Appliance" and
-      loading the <code>.ova</code> file.
-    </li>
-  </ol>
-</div>
-{% endcomment %}
+-->
