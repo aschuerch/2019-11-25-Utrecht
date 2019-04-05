@@ -1,6 +1,6 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "cd"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
+carpentry: "dc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
                       # Be sure to update the Carpentry type in _config.yml as well.  
 venue: "KNVM Division Microbial Typing"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "BCN Utrecht, Daltonlaan 100, 3584BJ Utrecht"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
