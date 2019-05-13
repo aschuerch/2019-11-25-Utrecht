@@ -7,7 +7,7 @@ address: "BCN Utrecht, Daltonlaan 100, 3584BJ Utrecht"      # full street addres
 country: "nl"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 latlng: "52.0873658,5.1570484"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
-humandate: "25 november 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "25-26 november 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9.00 to 17.00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2019-11-25      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2019-11-26        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
