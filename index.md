@@ -48,7 +48,7 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endcomment %}
 {% if page.eventbrite %}
 <iframe
-  src="https://www.knvm.org/events/6457-calendar/28970-data-carpentry-genomics-workshop/join"
+  src=""
   frameborder="0"
   width="100%"
   height="280px"
