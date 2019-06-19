@@ -119,6 +119,15 @@ This block displays the date and links to Google Calendar.
 </p>
 {% endif %}
 
+{% comment %}
+COSTS
+
+This block gives info on costs.
+{% endcomment %}
+<p id="costs">
+  <strong>Costs:</strong>
+The registration costs are 175 Euro and include coffee/tea, lunch and drinks at the end of the workshop.
+</p>
 
 {% comment %}
 REGISTRATION
