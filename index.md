@@ -119,6 +119,17 @@ This block displays the date and links to Google Calendar.
 </p>
 {% endif %}
 
+
+This block gives the link to the registration.
+{% endcomment %}
+{% if page.humandate %}
+<p id="registrations">
+  <strong>Registration:</strong>
+  <a href="https://www.knvm.org/events/6457-calendar/28970-data-carpentry-genomics-workshop/join">Register here</a>.
+</p>
+{% endif %}
+
+
 {% comment %}
 SPECIAL REQUIREMENTS
 
