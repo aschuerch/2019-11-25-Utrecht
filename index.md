@@ -15,7 +15,7 @@ instructor: ["Anita Schürch", "Sergio Arredondo Alonso", "Sam Nooij", "Dennis S
 helper: ["Duong Vu", "Jorge Navarro", "Mattias de Hollander", "Barbara Vreede"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["a.c.schurch@umcutrecht.nl", "f.hagen@westerdijkinstitute.nl"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  https://pad.carpentries.org/2019-11-25-Utrecht           # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+eventbrite: 1          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -48,7 +48,7 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endcomment %}
 {% if page.eventbrite %}
 <iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+  src="https://www.knvm.org/events/6457-calendar/28970-data-carpentry-genomics-workshop/join"
   frameborder="0"
   width="100%"
   height="280px"
