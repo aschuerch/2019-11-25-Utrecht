@@ -120,6 +120,9 @@ This block displays the date and links to Google Calendar.
 {% endif %}
 
 
+{% comment %}
+REGISTRATION
+
 This block gives the link to the registration.
 {% endcomment %}
 {% if page.humandate %}
