@@ -147,7 +147,7 @@ Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed which will be communicated before the workshop.
+  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (Spreadsheet program, putty) for which installation instructions are indicated <a href="https://datacarpentry.org/genomics-workshop/setup.html">here</a>..
 </p>
 
 {% comment%}
